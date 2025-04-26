@@ -18,8 +18,12 @@ const db = mysql.createConnection({
 });
 
 db.connect(err => {
-    if (err) throw err;
-    console.log('Conectado a MySQL');
+    if (err) {
+        console.error('Error al conectar a MySQL:', err.message);
+        // No tronar el servidor, solo loguear
+    } else {
+        console.log('Conectado a MySQL');
+    }
 });
 
 // Ruta para obtener productos
