@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandora Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      height: auto;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20vw;
+      border-bottom: 1px solid #eee;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .cta {
+      background-color: #f4f4f4;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .hero {
+      background-color: #c76b83;
+      margin: 20px 20vw;
+      overflow: hidden;
+      height: 400px;
+      border-radius: 12px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;     /* Escala la imagen para cubrir todo el contenedor */
+      object-position: bottom; 
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 70px 20vw;
+    }
+
+    .categories img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .promo {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 140px 20vw;
+      border-radius: 12px;
+    }
+
+    #promoimg1{
+      border-radius: 12px;
+    }
+    #promoimg1 img{
+      border-radius: 12px;
+      width: 400px;
+    }
+
+    .promo-text {
+      max-width: 300px;
+    }
+
+    .promo-text h2 {
+      margin-bottom: 10px;
+    }
+
+    .new-arrivals {
+      text-align: center;
+      margin: 60px 20vw 3px 20vw;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .tabs span {
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background-color: #f4f4f4;
+    }
+
+    #productssection {
+      display: grid;
+      box-sizing: border-box;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 100px;
+      margin-left: 20vw;
+      margin-right: 20vw;
+      margin-bottom: 100px;
+    }
+
+    .products{
+      margin: 13px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .productsdesc h1{
+      font-size: 15px;
+    }
+    .productsdesc p{
+      font-size: 13px;
+      color: #616161;
+    }
+
+    .productsimage img{
+      width: 230px;
+    }
+
+    .info-section {
+      background-color: #c76b83;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+      margin: 0 20vw;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #26252b;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      font-size: 14px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>PANDORA</strong></div>
+    <nav>
+      <a href="#">Catalog</a>
+      <a href="#">About us</a>
+    </nav>
+    <div class="cta">Contact</div>
+  </header>
+
+  <section class="hero">
+    <img src="assets\PandoraVerano4-1-800x450hd.jpg" alt="Pandora Banner">
+  </section>
+
+  <section class="categories">
+    <div>
+      <img src="assets\290778C01_1.png" alt="Everything">
+      <p>Everything</p>
+    </div>
+    <div>
+      <img src="assets\586292CZ_1.png" alt="Bracelets">
+      <p>Bracelets</p>
+    </div>
+    <div>
+      <img src="assets\799435C01_1.png" alt="Earrings">
+      <p>Earrings</p>
+    </div>
+    <div>
+      <img src="assets\590200_2.png" alt="Necklaces">
+      <p>Necklaces</p>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="promo-text">
+      <h2>Regala en el momento perfecto</h2>
+      <p>Haz que los recuerdos de mamá brillen. Sorpréndela con charms y joyas que cuenten cada uno de sus momentos.</p>
+    </div>
+    <div id="promoimg1">
+      <img src="assets\SS24_A_PDP_Model_Styled_08_RGB_High_twoimage.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="new-arrivals">
+    <h2>New Arrivals</h2>
+    <div class="tabs">
+      <span>Everything</span>
+      <span>Bracelets</span>
+      <span>Earrings</span>
+      <span>Necklaces</span>
+    </div>
+  </section>
+
+  <section id="productssection">
+
+
+
+  </section>
+
+  <section class="info-section">
+    <div>
+      <h3>Devoluciones</h3>
+      <p>Retornos garantizados</p>
+    </div>
+    <div>
+      <h3>Promociones</h3>
+      <p>Elige nuestras joyas para regalar en cada momento especial</p>
+    </div>
+    <div>
+      <h3>Envío Gratis</h3>
+      <p>Recibe ENVÍO GRATIS por compras por más de $50,000</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Newsletter</div>
+    <div>Help</div>
+    <div>About us</div>
+    <div>Customer Service</div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
