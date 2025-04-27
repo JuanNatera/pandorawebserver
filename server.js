@@ -11,9 +11,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Conexión a MySQL
 const db = mysql.createConnection({
-    host: 'mysqlserver324.mysql.database.azure.com',
-    user: 'adminazure',
-    password: '3728940Vv', // tu contraseña
+    host: 'mysqlserver37289.mysql.database.azure.com',
+    user: 'azureadmin',
+    password: '1043435988Vv', // tu contraseña
     database: 'pandoradatabase' // tu base de datos
 });
 
